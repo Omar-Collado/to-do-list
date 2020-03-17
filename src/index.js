@@ -1,5 +1,6 @@
 import {todo} from './todo';
 import {projects} from './projects';
+import {pageRender} from './render';
 
 if(!localStorage.getItem("projects")) {
     projects.addProject("Schoolwork");
@@ -7,4 +8,6 @@ if(!localStorage.getItem("projects")) {
     projects.addTodo(0, abc);
     console.log(projects.getProject(0));
 
-};
+}
+
+pageRender.initalize(projects.allProjects);
