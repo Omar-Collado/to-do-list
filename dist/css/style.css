@@ -9,6 +9,7 @@ body {
 .sidebar, .main {
     display: inline-block;
     font-size: 1rem;
+    vertical-align: top;
 }
 .sidebar {
     width: 30%;
