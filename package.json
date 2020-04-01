@@ -1,7 +1,7 @@
 {
   "name": "to-do-list",
   "version": "1.0.0",
-  "description": "Todo list made from HTML, CSS, Js. Uses npm and webpack.",
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,9 +16,7 @@
   },
   "homepage": "https://github.com/Omar-Collado/to-do-list#readme",
   "devDependencies": {
-    "webpack": "^4.42.1",
+    "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
-  },
-  "main": "index.js",
-  "keywords": []
+  }
 }
