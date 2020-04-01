@@ -10,11 +10,22 @@ const projects = (() => {
         return allProjects[num];
 
     }
+    const storeProjects = () => {
+        localStorage.setItem("projects", JSON.stringify(allProjects));
+    }
+    const getStoredProjects = () => {
+        let stored = JSON.parse(localStorage.getItem("projects"));
+        for(let i = 0; i < stored.length; i++) {
+            allProjects.push(stored[i]);
+        }
+    }
     return {
         addProject,
         allProjects,
         addTodo,
-        getProject
+        getProject,
+        storeProjects,
+        getStoredProjects
     }
 })();
 

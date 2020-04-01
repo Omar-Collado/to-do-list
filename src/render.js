@@ -15,7 +15,6 @@ const pageRender = (() => {
         
     }
     const renderTodos = (project) => {
-        console.log(project);
         for(let i = 1; i < project.length; i++) {
             let p = document.createElement("p");
             let desc = document.createElement("p");
